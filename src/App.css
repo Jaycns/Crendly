@@ -8,7 +8,7 @@ body {
   font-style: normal;
   height: 100%;
   margin: 0;
-  overflow-y: auto;
+  overflow: auto;
   box-sizing: border-box;
 }
 * {
@@ -19,6 +19,13 @@ body {
 .container {
   display: flex;
   flex-direction: row-reverse;
+}
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 .c-box {
   width: 22rem;
@@ -87,7 +94,7 @@ hr {
 }
 .form {
   margin: 10rem 7rem 2rem;
-  width: 30rem;
+  width: 50rem;
 }
 .form h1 {
   font-size: 2rem;
@@ -108,7 +115,7 @@ hr {
 }
 .lab {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 600;
   margin: 3rem 0rem 1rem 0rem;
 }
 .form-control {
@@ -152,6 +159,26 @@ hr {
 .button:hover {
   background: #fed0b7;
 }
+.butt {
+  width: 11rem;
+  height: 3rem;
+  background: rgb(109, 231, 180);
+  border-radius: 0.6rem;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease 0s;
+  font-size: 1rem;
+  color: rgb(0, 7, 31);
+  font-weight: 700;
+  margin: 7rem 25rem 0rem 0rem;
+}
+.butt:disabled {
+  opacity: 0.5;
+}
+.butt:hover:enabled {
+  background: #fed0b7;
+}
+
 .for-btn {
   outline: none;
   transition: all 0.2s ease 0s;
@@ -269,5 +296,80 @@ hr {
   color: #000;
 }
 .delete:hover {
-  background: #000926;
+  background: #002616;
+}
+.bubble {
+  bottom: 0;
+  position: fixed;
+  right: 0;
+}
+.advert {
+  height: 140px;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  top: 80%;
+  background: rgb(248, 240, 240);
+  color: #002616;
+  border-radius: 0.6rem;
+}
+.advert-p {
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.advert-button {
+  width: 7rem;
+  height: 2rem;
+  background: rgb(255, 204, 185);
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 2.3rem 0rem 0rem;
+}
+.divback {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.form-grouper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.status-container {
+  margin-top: 3rem;
+}
+.status {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.status-holder {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  margin: 0.8rem 0.7rem 0.7rem 0rem;
+  border: 1px solid rgb(128, 221, 224);
+  position: relative;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.status-line {
+  width: 100%;
+  margin-top: 2rem;
+  border: 1px solid rgb(36, 115, 115);
 }

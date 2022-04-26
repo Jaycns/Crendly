@@ -1,7 +1,9 @@
 import "./App.css";
 import Cmage from "./images/c_logo.png";
+import wavy from "./images/wavy.png";
 import { MdOutlineRefresh } from "react-icons/md";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function App() {
   const [randomNumber, setRandomNumber] = useState([]);
@@ -48,10 +50,12 @@ function App() {
       <div className="box">
         <div className="box-wrap">
           <p className="box-p">
-            Don't have an account?{" "}
-            <a href="https://github.com/" className="box-a">
-              Sign Up
-            </a>
+            Don't have an account?
+            <Link to="/signUp">
+              <a href="./signin" className="box-a">
+                Sign Up
+              </a>
+            </Link>
           </p>
           <form className="form" onSubmit={handleSubmit}>
             <div className="form-head">
@@ -209,10 +213,13 @@ function App() {
             </div>
           </div>
         </div>
+        <img className="bubble" src={wavy} alt="any love" />
       </div>
       <div className="c-box">
         <div className="c-container">
-          <img src={Cmage} alt="Die" />
+         
+            <img src={Cmage} alt="Die" />
+          
           <div className="c-text">
             <h1 className="c-tit">
               You're in <span className="c-span">Control</span>
