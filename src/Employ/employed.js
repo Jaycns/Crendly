@@ -55,7 +55,7 @@ function Employed() {
         />
       </div>
       <div className="status-container">
-        <h6>Are you politically exposed?</h6>
+        <h6 className="lab">Are you politically exposed?</h6>
         <div className="status">
           <div
             value="Yes, I am"
@@ -80,7 +80,7 @@ function Employed() {
         </div>
       </div>
       <div className="login">
-        <button type="button" className="butt">
+        <button type="button" className="button">
           Next
         </button>
       </div>

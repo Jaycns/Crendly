@@ -47,6 +47,7 @@ function App() {
 
   return (
     <div className="container">
+      <div className="control"></div>
       <div className="box">
         <div className="box-wrap">
           <p className="box-p">
@@ -214,18 +215,17 @@ function App() {
           </div>
         </div>
         <img className="bubble" src={wavy} alt="any love" />
-      </div>
-      <div className="c-box">
-        <div className="c-container">
-         
+        <div className="c-box">
+          <div className="c-container">
             <img src={Cmage} alt="Die" />
-          
-          <div className="c-text">
-            <h1 className="c-tit">
-              You're in <span className="c-span">Control</span>
-            </h1>
-            <p className="c-p">Control your profit on what you lend out</p>
-            <hr />
+
+            <div className="c-text">
+              <h1 className="c-tit">
+                You're in <span className="c-span">Control</span>
+              </h1>
+              <p className="c-p">Control your profit on what you lend out</p>
+              <hr />
+            </div>
           </div>
         </div>
       </div>

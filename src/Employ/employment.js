@@ -29,7 +29,7 @@ function Employment() {
               <p>Please provide your employment information.</p>
             </div>
             <div className="">
-              <h5>What is your employment status?</h5>
+              <h5 className="lab">What is your employment status?</h5>
               <div className="status">
                 <div
                   value="Employed"
@@ -66,11 +66,13 @@ function Employment() {
                 </div>
               </div>
             </div>
-            <div className="login">
-              <button type="button" className="butt" disabled>
-                Next
-              </button>
-            </div>
+            {op === "" && (
+              <div className="login">
+                <button type="button" className="butt" disabled>
+                  Next
+                </button>
+              </div>
+            )}
             {op === "Employed" ? <Employed /> : ""}
             {op === "Self-Employed" ? <SelfEmployed /> : ""}
             {op === "UnEmployed" ? <UnEmployed /> : ""}
