@@ -9,7 +9,7 @@ function Unemployed() {
   return (
     <div className="employed">
       <hr className="status-line" />
-      <div className="status-container">
+      <div className="form-wrapper">
         <h6 className="lab">Are you politically exposed?</h6>
         <div className="status">
           <div
