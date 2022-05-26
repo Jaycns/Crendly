@@ -91,7 +91,8 @@ margin: 0rem 0rem 0rem 0rem;
 }
 .box-p {
   font-size: 1rem;
-  text-align: right;
+  right: 3%;
+  position: fixed;
 }
 .box-a {
   color: #6de7b4;
@@ -99,12 +100,15 @@ margin: 0rem 0rem 0rem 0rem;
   outline: none;
   text-decoration: underline;
   transition: all 0.2s;
+  margin-left: 0.5rem;
 }
 .box-a:hover {
   color: #ffc49d;
 }
 .form {
-  margin: 10rem 7rem 2rem;
+  position: absolute;
+  left: 25%;
+  top: 30%;
   width: 50rem;
 }
 .form h1 {
@@ -214,7 +218,7 @@ margin: 0rem 0rem 0rem 0rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: -9rem 0rem 0rem 0rem;
+  margin: 40rem 0rem 0rem 0rem;
   width: 100%;
 }
 .key-container {
@@ -384,6 +388,7 @@ margin: 0rem 0rem 0rem 0rem;
   margin-top: 2rem;
   border: 1px solid rgb(36, 115, 115);
 }
+
 @media screen and (max-width: 500px) {
 .box-wrap{
   padding: 0;
@@ -428,7 +433,7 @@ margin: 0;
  }
  .box-p{
    font-size:0.5rem;
-   position: absolute;
+   position: fixed;
    z-index: 99;
    top: 2%;
    right: 3%;
@@ -438,15 +443,16 @@ margin: 0;
    margin-left: 0.2rem;
  }
  .form{
-   margin: 8.5rem 2rem 2rem;
    width: auto;
+   left: 10%;
+   top: 35%;
  }
  .form h1{
    font-size: 1rem;
    font-weight: 500;
  }
  .form-control{
-   font-size: 0.6rem;
+   font-size: 0.7rem;
    padding: 0 0.5rem;
    height: 2.2rem;
  }
@@ -463,46 +469,50 @@ margin: 0;
    height: 2.2rem;
    width: 2.2rem;
    margin-right: 0.5rem;
-   font-size: 0.6rem;
+   font-size: 0.9rem;
  }
  .for-btn{
    font-size: 0.7rem;
    margin: 0.8rem 0;
  }
  .wrapper{
-   display: block;
-   margin: -1.5rem 0rem 0rem 2rem;
+   display: flex;
+   flex-direction: column-reverse;
+   position: absolute;
+   top: -65vw;
+   left: 6%;
+   
  }
  .button{
    font-size: 0.7rem;
-   margin: 0;
+   margin: 4rem 10rem;
    width: 7rem;
    height: 2rem;
-   position: absolute;
-   bottom: 3%;
-   left: 30%;
+
+  
+
 
  }
  .keypad{
-   font-size: 1rem;
-   height: 3rem;
-   width: 3rem;
+   font-size: 0.8rem;
+   height: 2.5rem;
+   width: 2.5rem;
    margin: 0.3rem;
 
  }
  .refresh-btn{
-   width: 3rem;
-   height: 3rem;
+   width: 2.5rem;
+   height: 2.5rem;
    font-size: 1rem;
  }
  .delete{
-  width: 7rem;
-    height: 2rem;
+  width: 5rem;
+    height: 1.5rem;
     font-size: 0.7rem;
  }
  .clear{
-  width: 7rem;
-    height: 2rem;
+  width: 5rem;
+    height: 1.5rem;
     font-size: 0.7rem;
  }
  .advert{
@@ -516,7 +526,14 @@ margin: 0;
    height: 0rem;
    font-size: 0.6rem;
    padding: 0.8rem;
-   margin: 0.1rem 0.1rem 0rem 0rem;
+   
+ }
+ .key-container{
+   position: relative;
+   z-index: 1;
+  
+   margin: 7vmax auto;
+   
  }
  .status-container{
    margin: 0rem;
@@ -527,6 +544,33 @@ margin: 0;
  .butt{
   margin: 2rem 0; 
   font-size:0.7rem;
-width: 7rem;
-height: 2rem; }
+  width: 7rem;
+  height: 2rem; }
 }
+
+@media screen and (max-width: 414px) {
+  .key-container {
+    margin: 9vmax auto;
+    right: 0.8rem;
+
+  }
+
+}
+@media screen and (max-width: 393px) {
+  .key-container {
+    margin: 7vmax auto;
+    right: 0.2rem;
+
+  }
+
+}
+@media screen and (max-width: 375px) {
+  .key-container {
+    margin: 1.1vmax auto;
+    right: -0.5rem;
+
+  }
+
+}
+
+
