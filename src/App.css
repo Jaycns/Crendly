@@ -8,7 +8,7 @@ body {
   font-style: normal;
   height: 100%;
   margin: 0;
-  overflow-y: auto;
+  overflow-y: scroll;
   box-sizing: border-box;
 }
 * {
@@ -24,8 +24,6 @@ body {
   align-items: flex-start;
 }
 @media screen and (max-width: 500px) {
-  
-  
 }
 body {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -45,17 +43,16 @@ body::-webkit-scrollbar {
 .c-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 80%;
   padding: 2.5rem 3rem;
   margin-right: 50px;
 }
 .c-text {
-position: relative;
-top: 50%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-
+  position: relative;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .c-tit {
   font-size: 1.9rem;
@@ -78,13 +75,12 @@ hr {
 
 .box {
   display: flex;
-width: 90%;
-margin: 0rem 0rem 0rem 0rem;
-
+  width: 90%;
+  margin: 0rem 0rem 0rem 0rem;
 }
 .box-wrap {
   width: 100%;
-  overflow-x:hidden;
+  overflow-x: hidden;
   height: 100%;
   padding: 3rem 2rem 3rem;
   margin: 0rem 0rem 0rem 9rem;
@@ -108,7 +104,7 @@ margin: 0rem 0rem 0rem 0rem;
 .form {
   position: absolute;
   left: 25%;
-  top: 30%;
+  top: 20%;
   width: 50rem;
 }
 .form h1 {
@@ -390,187 +386,170 @@ margin: 0rem 0rem 0rem 0rem;
 }
 
 @media screen and (max-width: 500px) {
-.box-wrap{
-  padding: 0;
-  margin: 0;
-}
-.bubble {
-display: none;
-}
- img{
-   width: 20px;
-   margin: 0.5rem;
- } 
- .c-tit{
-   font-size:1.1rem;
-   margin-bottom: 0.1rem
- }
- .container {
-   flex-direction: column-reverse;
- }
+  .box-wrap {
+    padding: 0;
+    margin: 0;
+  }
+  .bubble {
+    display: none;
+  }
+  img {
+    width: 20px;
+    margin: 0.5rem;
+  }
+  .c-tit {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
 
- .c-box {
-   position: fixed;
-   height: 20%;
-   width: 100%;
-
- }
- .c-text{
-top: 10%;
-left: 10%;
-width: 100%;
- }
- .c-p{
-font-size: 0.6rem;
-margin-bottom: 0rem;
- }
- .c-container{
-padding: 0;
-margin: 0;
- }
- hr{
-   border: none
- }
- .box-p{
-   font-size:0.5rem;
-   position: fixed;
-   z-index: 99;
-   top: 2%;
-   right: 3%;
-   
- }
- .box-a{
-   margin-left: 0.2rem;
- }
- .form{
-   width: auto;
-   left: 10%;
-   top: 35%;
- }
- .form h1{
-   font-size: 1rem;
-   font-weight: 500;
- }
- .form-control{
-   font-size: 0.7rem;
-   padding: 0 0.5rem;
-   height: 2.2rem;
- }
- .form p{
-   font-size: 0.6rem;
-   margin: 0;
- }
- .lab{
-   font-size: 0.7rem;
-   font-weight: 400;
-   margin: 1rem 0rem 0.5rem 0rem;
- }
- .inbox{
-   height: 2.2rem;
-   width: 2.2rem;
-   margin-right: 0.5rem;
-   font-size: 0.9rem;
- }
- .for-btn{
-   font-size: 0.7rem;
-   margin: 0.8rem 0;
- }
- .wrapper{
-   display: flex;
-   flex-direction: column-reverse;
-   position: absolute;
-   top: -65vw;
-   left: 6%;
-   
- }
- .button{
-   font-size: 0.7rem;
-   margin: 4rem 10rem;
-   width: 7rem;
-   height: 2rem;
-
-  
-
-
- }
- .keypad{
-   font-size: 0.8rem;
-   height: 2.5rem;
-   width: 2.5rem;
-   margin: 0.3rem;
-
- }
- .refresh-btn{
-   width: 2.5rem;
-   height: 2.5rem;
-   font-size: 1rem;
- }
- .delete{
-  width: 5rem;
+  .c-box {
+    position: fixed;
+    height: 20%;
+    width: 100%;
+  }
+  .c-text {
+    top: 10%;
+    left: 10%;
+    width: 100%;
+  }
+  .c-p {
+    font-size: 0.6rem;
+    margin-bottom: 0rem;
+  }
+  .c-container {
+    padding: 0;
+    margin: 0;
+  }
+  hr {
+    border: none;
+  }
+  .box-p {
+    font-size: 0.5rem;
+    position: fixed;
+    z-index: 99;
+    top: 2%;
+    right: 3%;
+  }
+  .box-a {
+    margin-left: 0.2rem;
+  }
+  .form {
+    width: auto;
+    left: 10%;
+    top: 35%;
+  }
+  .form h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .form-control {
+    font-size: 0.7rem;
+    padding: 0 0.5rem;
+    height: 2.2rem;
+  }
+  .form p {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  .lab {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin: 1rem 0rem 0.5rem 0rem;
+  }
+  .inbox {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .for-btn {
+    font-size: 0.7rem;
+    margin: 0.8rem 0;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: -65vw;
+    left: 6%;
+  }
+  .button {
+    font-size: 0.7rem;
+    margin: 4rem 10rem;
+    width: 7rem;
+    height: 2rem;
+  }
+  .keypad {
+    font-size: 0.8rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0.3rem;
+  }
+  .refresh-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  .delete {
+    width: 5rem;
     height: 1.5rem;
     font-size: 0.7rem;
- }
- .clear{
-  width: 5rem;
+  }
+  .clear {
+    width: 5rem;
     height: 1.5rem;
     font-size: 0.7rem;
- }
- .advert{
-   display: none;
- }
- .status{
-   width: 500px;
- }
- .status-holder{
-   width: 6rem;
-   height: 0rem;
-   font-size: 0.6rem;
-   padding: 0.8rem;
-   
- }
- .key-container{
-   position: relative;
-   z-index: 1;
-  
-   margin: 7vmax auto;
-   
- }
- .status-container{
-   margin: 0rem;
- }
- .status-line{
-   width: 107%;
- }
- .butt{
-  margin: 2rem 0; 
-  font-size:0.7rem;
-  width: 7rem;
-  height: 2rem; }
+  }
+  .advert {
+    display: none;
+  }
+  .status {
+    width: 500px;
+  }
+  .status-holder {
+    width: 6rem;
+    height: 0rem;
+    font-size: 0.6rem;
+    padding: 0.8rem;
+  }
+  .key-container {
+    position: relative;
+    z-index: 1;
+
+    margin: 7vmax auto;
+  }
+  .status-container {
+    margin: 0rem;
+  }
+  .status-line {
+    width: 107%;
+  }
+  .butt {
+    margin: 2rem 0;
+    font-size: 0.7rem;
+    width: 7rem;
+    height: 2rem;
+  }
 }
 
 @media screen and (max-width: 414px) {
   .key-container {
     margin: 9vmax auto;
     right: 0.8rem;
-
   }
-
 }
 @media screen and (max-width: 393px) {
   .key-container {
     margin: 7vmax auto;
     right: 0.2rem;
-
   }
-
 }
 @media screen and (max-width: 375px) {
   .key-container {
     margin: 1.1vmax auto;
     right: -0.5rem;
-
   }
-
 }
-
-

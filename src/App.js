@@ -68,7 +68,7 @@ function App() {
               <input
                 className="form-control"
                 type="email"
-                placeholder="Username or Email"
+                placeholder="@Jaycn"
                 name="email"
               />
             </div>
