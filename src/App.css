@@ -385,7 +385,7 @@ hr {
   border: 1px solid rgb(36, 115, 115);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .box-wrap {
     padding: 0;
     margin: 0;
@@ -439,7 +439,7 @@ hr {
   .form {
     width: auto;
     left: 10%;
-    top: 35%;
+    top: 28%;
   }
   .form h1 {
     font-size: 1rem;
@@ -468,6 +468,7 @@ hr {
   .for-btn {
     font-size: 0.7rem;
     margin: 0.8rem 0;
+    display: none;
   }
   .wrapper {
     display: flex;
@@ -478,7 +479,7 @@ hr {
   }
   .button {
     font-size: 0.7rem;
-    margin: 4rem 10rem;
+    margin: 1rem 10rem;
     width: 7rem;
     height: 2rem;
   }
